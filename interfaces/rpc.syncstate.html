@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CellIncludingOutPoint | CKB-SDK.js</title>
+	<title>SyncState | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,44 +54,24 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/ckbcomponents.html">CKBComponents</a>
+					<a href="../modules/rpc.html">RPC</a>
 				</li>
 				<li>
-					<a href="ckbcomponents.cellincludingoutpoint.html">CellIncludingOutPoint</a>
+					<a href="rpc.syncstate.html">SyncState</a>
 				</li>
 			</ul>
-			<h1>Interface CellIncludingOutPoint</h1>
+			<h1>Interface SyncState</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>property</dt>
-						<dd><p>capacty, cell capacity</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>lock, lock hash</p>
-						</dd>
-						<dt>property</dt>
-						<dd><p>outPoint</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CellIncludingOutPoint</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="cachedcell.html" class="tsd-signature-type">CachedCell</a>
-							</li>
-						</ul>
+						<span class="target">SyncState</span>
 					</li>
 				</ul>
 			</section>
@@ -102,12 +82,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.cellincludingoutpoint.html#blockhash" class="tsd-kind-icon">block<wbr>Hash</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.cellincludingoutpoint.html#capacity" class="tsd-kind-icon">capacity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.cellincludingoutpoint.html#cellbase" class="tsd-kind-icon">cellbase</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.cellincludingoutpoint.html#lock" class="tsd-kind-icon">lock</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.cellincludingoutpoint.html#outpoint" class="tsd-kind-icon">out<wbr>Point</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.cellincludingoutpoint.html#outputdatalen" class="tsd-kind-icon">output<wbr>Data<wbr>Len</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#best_known_block_number" class="tsd-kind-icon">best_<wbr>known_<wbr>block_<wbr>number</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#best_known_block_timestamp" class="tsd-kind-icon">best_<wbr>known_<wbr>block_<wbr>timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#fast_time" class="tsd-kind-icon">fast_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#ibd" class="tsd-kind-icon">ibd</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#inflight_blocks_count" class="tsd-kind-icon">inflight_<wbr>blocks_<wbr>count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#low_time" class="tsd-kind-icon">low_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#normal_time" class="tsd-kind-icon">normal_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.syncstate.html#orphan_blocks_count" class="tsd-kind-icon">orphan_<wbr>blocks_<wbr>count</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,62 +98,82 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="blockhash" class="tsd-anchor"></a>
-					<h3>block<wbr>Hash</h3>
-					<div class="tsd-signature tsd-kind-icon">block<wbr>Hash<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a></div>
+					<a name="best_known_block_number" class="tsd-anchor"></a>
+					<h3>best_<wbr>known_<wbr>block_<wbr>number</h3>
+					<div class="tsd-signature tsd-kind-icon">best_<wbr>known_<wbr>block_<wbr>number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L271">packages/ckb-types/index.d.ts:271</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L277">packages/ckb-sdk-rpc/types/rpc/index.d.ts:277</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="capacity" class="tsd-anchor"></a>
-					<h3>capacity</h3>
-					<div class="tsd-signature tsd-kind-icon">capacity<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#capacity" class="tsd-signature-type">Capacity</a></div>
+					<a name="best_known_block_timestamp" class="tsd-anchor"></a>
+					<h3>best_<wbr>known_<wbr>block_<wbr>timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">best_<wbr>known_<wbr>block_<wbr>timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L272">packages/ckb-types/index.d.ts:272</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L278">packages/ckb-sdk-rpc/types/rpc/index.d.ts:278</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cellbase" class="tsd-anchor"></a>
-					<h3>cellbase</h3>
-					<div class="tsd-signature tsd-kind-icon">cellbase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="fast_time" class="tsd-anchor"></a>
+					<h3>fast_<wbr>time</h3>
+					<div class="tsd-signature tsd-kind-icon">fast_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L275">packages/ckb-types/index.d.ts:275</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L279">packages/ckb-sdk-rpc/types/rpc/index.d.ts:279</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lock" class="tsd-anchor"></a>
-					<h3>lock</h3>
-					<div class="tsd-signature tsd-kind-icon">lock<span class="tsd-signature-symbol">:</span> <a href="ckbcomponents.script.html" class="tsd-signature-type">Script</a></div>
+					<a name="ibd" class="tsd-anchor"></a>
+					<h3>ibd</h3>
+					<div class="tsd-signature tsd-kind-icon">ibd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L273">packages/ckb-types/index.d.ts:273</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L280">packages/ckb-sdk-rpc/types/rpc/index.d.ts:280</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="outpoint" class="tsd-anchor"></a>
-					<h3>out<wbr>Point</h3>
-					<div class="tsd-signature tsd-kind-icon">out<wbr>Point<span class="tsd-signature-symbol">:</span> <a href="ckbcomponents.outpoint.html" class="tsd-signature-type">OutPoint</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="inflight_blocks_count" class="tsd-anchor"></a>
+					<h3>inflight_<wbr>blocks_<wbr>count</h3>
+					<div class="tsd-signature tsd-kind-icon">inflight_<wbr>blocks_<wbr>count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L274">packages/ckb-types/index.d.ts:274</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L281">packages/ckb-sdk-rpc/types/rpc/index.d.ts:281</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="outputdatalen" class="tsd-anchor"></a>
-					<h3>output<wbr>Data<wbr>Len</h3>
-					<div class="tsd-signature tsd-kind-icon">output<wbr>Data<wbr>Len<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="low_time" class="tsd-anchor"></a>
+					<h3>low_<wbr>time</h3>
+					<div class="tsd-signature tsd-kind-icon">low_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L276">packages/ckb-types/index.d.ts:276</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L282">packages/ckb-sdk-rpc/types/rpc/index.d.ts:282</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="normal_time" class="tsd-anchor"></a>
+					<h3>normal_<wbr>time</h3>
+					<div class="tsd-signature tsd-kind-icon">normal_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L283">packages/ckb-sdk-rpc/types/rpc/index.d.ts:283</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="orphan_blocks_count" class="tsd-anchor"></a>
+					<h3>orphan_<wbr>blocks_<wbr>count</h3>
+					<div class="tsd-signature tsd-kind-icon">orphan_<wbr>blocks_<wbr>count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L284">packages/ckb-sdk-rpc/types/rpc/index.d.ts:284</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -183,13 +185,13 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-namespace">
+					<li class=" tsd-kind-namespace">
 						<a href="../modules/ckbcomponents.html">CKBComponents</a>
 					</li>
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/loadcellsparams.html">Load<wbr>Cells<wbr>Params</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class="current tsd-kind-namespace">
 						<a href="../modules/rpc.html">RPC</a>
 					</li>
 					<li class=" tsd-kind-namespace">
@@ -202,25 +204,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="ckbcomponents.cellincludingoutpoint.html" class="tsd-kind-icon">Cell<wbr>Including<wbr>Out<wbr>Point</a>
+						<a href="rpc.syncstate.html" class="tsd-kind-icon">Sync<wbr>State</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.cellincludingoutpoint.html#blockhash" class="tsd-kind-icon">block<wbr>Hash</a>
+								<a href="rpc.syncstate.html#best_known_block_number" class="tsd-kind-icon">best_<wbr>known_<wbr>block_<wbr>number</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.cellincludingoutpoint.html#capacity" class="tsd-kind-icon">capacity</a>
+								<a href="rpc.syncstate.html#best_known_block_timestamp" class="tsd-kind-icon">best_<wbr>known_<wbr>block_<wbr>timestamp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.cellincludingoutpoint.html#cellbase" class="tsd-kind-icon">cellbase</a>
+								<a href="rpc.syncstate.html#fast_time" class="tsd-kind-icon">fast_<wbr>time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.cellincludingoutpoint.html#lock" class="tsd-kind-icon">lock</a>
+								<a href="rpc.syncstate.html#ibd" class="tsd-kind-icon">ibd</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.cellincludingoutpoint.html#outpoint" class="tsd-kind-icon">out<wbr>Point</a>
+								<a href="rpc.syncstate.html#inflight_blocks_count" class="tsd-kind-icon">inflight_<wbr>blocks_<wbr>count</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.cellincludingoutpoint.html#outputdatalen" class="tsd-kind-icon">output<wbr>Data<wbr>Len</a>
+								<a href="rpc.syncstate.html#low_time" class="tsd-kind-icon">low_<wbr>time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="rpc.syncstate.html#normal_time" class="tsd-kind-icon">normal_<wbr>time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="rpc.syncstate.html#orphan_blocks_count" class="tsd-kind-icon">orphan_<wbr>blocks_<wbr>count</a>
 							</li>
 						</ul>
 					</li>

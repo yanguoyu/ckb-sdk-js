@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NodeInfo | CKB-SDK.js</title>
+	<title>LocalNodeInfo | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/ckbcomponents.html">CKBComponents</a>
+					<a href="../modules/rpc.html">RPC</a>
 				</li>
 				<li>
-					<a href="ckbcomponents.nodeinfo.html">NodeInfo</a>
+					<a href="rpc.localnodeinfo.html">LocalNodeInfo</a>
 				</li>
 			</ul>
-			<h1>Interface NodeInfo</h1>
+			<h1>Interface LocalNodeInfo</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">NodeInfo</span>
+						<span class="target">LocalNodeInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -82,10 +82,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.nodeinfo.html#addresses" class="tsd-kind-icon">addresses</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.nodeinfo.html#isoutbound" class="tsd-kind-icon">is<wbr>Outbound</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.nodeinfo.html#nodeid" class="tsd-kind-icon">node<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.nodeinfo.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.localnodeinfo.html#active" class="tsd-kind-icon">active</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.localnodeinfo.html#addresses" class="tsd-kind-icon">addresses</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.localnodeinfo.html#connections" class="tsd-kind-icon">connections</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.localnodeinfo.html#node_id" class="tsd-kind-icon">node_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.localnodeinfo.html#protocols" class="tsd-kind-icon">protocols</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.localnodeinfo.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,32 +96,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="active" class="tsd-anchor"></a>
+					<h3>active</h3>
+					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L174">packages/ckb-sdk-rpc/types/rpc/index.d.ts:174</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="addresses" class="tsd-anchor"></a>
 					<h3>addresses</h3>
-					<div class="tsd-signature tsd-kind-icon">addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>score<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"address"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"score"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/264cb52/packages/ckb-types/index.d.ts#L314">packages/ckb-types/index.d.ts:314</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L175">packages/ckb-sdk-rpc/types/rpc/index.d.ts:175</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="isoutbound" class="tsd-anchor"></a>
-					<h3>is<wbr>Outbound</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Outbound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="connections" class="tsd-anchor"></a>
+					<h3>connections</h3>
+					<div class="tsd-signature tsd-kind-icon">connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/264cb52/packages/ckb-types/index.d.ts#L315">packages/ckb-types/index.d.ts:315</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L176">packages/ckb-sdk-rpc/types/rpc/index.d.ts:176</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="nodeid" class="tsd-anchor"></a>
-					<h3>node<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">node<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="node_id" class="tsd-anchor"></a>
+					<h3>node_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">node_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/264cb52/packages/ckb-types/index.d.ts#L313">packages/ckb-types/index.d.ts:313</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L177">packages/ckb-sdk-rpc/types/rpc/index.d.ts:177</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="protocols" class="tsd-anchor"></a>
+					<h3>protocols</h3>
+					<div class="tsd-signature tsd-kind-icon">protocols<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>support_versions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L178">packages/ckb-sdk-rpc/types/rpc/index.d.ts:178</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +151,7 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/264cb52/packages/ckb-types/index.d.ts#L312">packages/ckb-types/index.d.ts:312</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L179">packages/ckb-sdk-rpc/types/rpc/index.d.ts:179</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,13 +163,13 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-namespace">
+					<li class=" tsd-kind-namespace">
 						<a href="../modules/ckbcomponents.html">CKBComponents</a>
 					</li>
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/loadcellsparams.html">Load<wbr>Cells<wbr>Params</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class="current tsd-kind-namespace">
 						<a href="../modules/rpc.html">RPC</a>
 					</li>
 					<li class=" tsd-kind-namespace">
@@ -160,19 +182,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="ckbcomponents.nodeinfo.html" class="tsd-kind-icon">Node<wbr>Info</a>
+						<a href="rpc.localnodeinfo.html" class="tsd-kind-icon">Local<wbr>Node<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.nodeinfo.html#addresses" class="tsd-kind-icon">addresses</a>
+								<a href="rpc.localnodeinfo.html#active" class="tsd-kind-icon">active</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.nodeinfo.html#isoutbound" class="tsd-kind-icon">is<wbr>Outbound</a>
+								<a href="rpc.localnodeinfo.html#addresses" class="tsd-kind-icon">addresses</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.nodeinfo.html#nodeid" class="tsd-kind-icon">node<wbr>Id</a>
+								<a href="rpc.localnodeinfo.html#connections" class="tsd-kind-icon">connections</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.nodeinfo.html#version" class="tsd-kind-icon">version</a>
+								<a href="rpc.localnodeinfo.html#node_id" class="tsd-kind-icon">node_<wbr>id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="rpc.localnodeinfo.html#protocols" class="tsd-kind-icon">protocols</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="rpc.localnodeinfo.html#version" class="tsd-kind-icon">version</a>
 							</li>
 						</ul>
 					</li>

@@ -74,9 +74,9 @@
 						</tr>
 					</thead>
 					<tbody><tr>
-							<td>Travis</td>
-							<td><a href="https://travis-ci.com/nervosnetwork/ckb-sdk-js"><img src="https://travis-ci.com/nervosnetwork/ckb-sdk-js.svg?branch=master" alt="Build Status"></a></td>
-							<td><a href="https://travis-ci.com/nervosnetwork/ckb-sdk-js"><img src="https://travis-ci.com/nervosnetwork/ckb-sdk-js.svg?branch=develop" alt="Build Status"></a></td>
+							<td>Unit Tests</td>
+							<td><a href="https://github.com/nervosnetwork/ckb-sdk-js/actions?query=branch%3Amaster+workflow%3A%22Unit+Tests%22"><img src="https://github.com/nervosnetwork/ckb-sdk-js/workflows/Unit%20Tests/badge.svg?branch=master" alt="Unit Tests"></a></td>
+							<td><a href="https://github.com/nervosnetwork/ckb-sdk-js/actions?query=branch%3Adevelop+workflow%3A%22Unit+Tests%22"><img src="https://github.com/nervosnetwork/ckb-sdk-js/workflows/Unit%20Tests/badge.svg?branch=develop" alt="Unit Tests"></a></td>
 						</tr>
 						<tr>
 							<td>Coverage</td>
@@ -87,7 +87,9 @@
 				<p><a href="https://www.npmjs.com/package/@nervosnetwork/ckb-sdk-core"><img src="https://img.shields.io/npm/v/@nervosnetwork/ckb-sdk-core/latest.svg" alt="NPM"></a>
 					<a href="https://packagequality.com/#?package=@nervosnetwork/ckb-sdk-core"><img src="https://npm.packagequality.com/shield/%40nervosnetwork%2Fckb-sdk-core.svg" alt="Package Quality"></a>
 					<a href="./LICENSE"><img src="https://img.shields.io/npm/l/@nervosnetwork/ckb-sdk-core.svg" alt="License"></a>
-				<a href="https://t.me/nervos_ckb_dev"><img src="https://cdn.rawgit.com/Patrolavia/telegram-badge/8fe3382b/chat.svg" alt="Telegram Group"></a></p>
+					<a href="https://t.me/nervos_ckb_dev"><img src="https://cdn.rawgit.com/Patrolavia/telegram-badge/8fe3382b/chat.svg" alt="Telegram Group"></a>
+					<a href="https://github.com/nervosnetwork/ckb-sdk-js/actions?query=workflow%3ASNYK"><img src="https://github.com/nervosnetwork/ckb-sdk-js/workflows/SNYK/badge.svg" alt="SNYK"></a>
+				<a href="https://nervosnetwork.github.io/ckb-sdk-js/classes/ckb.html"><img src="https://github.com/nervosnetwork/ckb-sdk-js/workflows/Deploy%20Docs/badge.svg" alt="Deploy Docs"></a></p>
 				<p>JavaScript SDK for Nervos <a href="https://github.com/nervosnetwork/ckb">CKB</a>.</p>
 				<p>The ckb-sdk-js is still under development and NOT production ready. You should get familiar with CKB transaction structure and RPC before using it.</p>
 				<details>
@@ -125,7 +127,7 @@
 					<h2>Before everything</h2>
 				</a>
 				<p>Due to safety concern, the SDK won’t generate private keys for you. You can use <code>openssl</code> to generate a private key:</p>
-				<pre><code class="language-sh">$ openssl rand 32 -hex</code></pre>
+				<pre><code class="language-sh">$ openssl rand -hex 32</code></pre>
 				<p>For other cases, say, you&#39;re going to generate it in a JavaScript Project(Please don&#39;t), <a href="https://github.com/indutny/elliptic/">Elliptic</a> may be the one you can use.</p>
 				<a href="#about-nervos-ckb" id="about-nervos-ckb" style="color: inherit; text-decoration: none;">
 					<h2>About Nervos CKB</h2>
@@ -276,7 +278,6 @@ ckb.rpc.setNode({ httpsAgent })</code></pre>
 					<li><a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/develop/packages/ckb-sdk-core/examples/sendTransactionWithMultiplePrivateKey.js">Send Transaction with multiple private key</a></li>
 					<li><a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/develop/packages/ckb-sdk-core/examples/nervosDAO.js">Deposit to and withdraw from Nervos DAO</a></li>
 					<li><a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/develop/packages/ckb-sdk-core/examples/sendTransactionWithLumosCollector.js">Send Transaction with Lumos Collector</a></li>
-					<li><a href="https://github.com/Keith-CY/ckb-sdk-lumos-starter">Lumos Starter</a></li>
 				</ol>
 				<a href="#development-process" id="development-process" style="color: inherit; text-decoration: none;">
 					<h1>Development Process</h1>
@@ -566,9 +567,6 @@ $ yarn run tsc <span class="hljs-comment"># build packages with tsc command</spa
 						<a href="globals.html#parameterblock" class="tsd-kind-icon">parameter<wbr>Block</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#tohexinlittleendian" class="tsd-kind-icon">to<wbr>Hex<wbr>InLittle<wbr>Endian</a>
-					</li>
-					<li class=" tsd-kind-variable">
 						<a href="globals.html#v" class="tsd-kind-icon">v</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -609,9 +607,6 @@ $ yarn run tsc <span class="hljs-comment"># build packages with tsc command</spa
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#bytestohex" class="tsd-kind-icon">bytes<wbr>ToHex</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#bytestoutf8" class="tsd-kind-icon">bytes<wbr>ToUtf8</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#calculatetransactionfee" class="tsd-kind-icon">calculate<wbr>Transaction<wbr>Fee</a>
@@ -671,9 +666,6 @@ $ yarn run tsc <span class="hljs-comment"># build packages with tsc command</spa
 						<a href="globals.html#hextobytes" class="tsd-kind-icon">hex<wbr>ToBytes</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#hextoutf8" class="tsd-kind-icon">hex<wbr>ToUtf8</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#isindexerparams" class="tsd-kind-icon">is<wbr>Indexer<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
@@ -717,9 +709,6 @@ $ yarn run tsc <span class="hljs-comment"># build packages with tsc command</spa
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#ready" class="tsd-kind-icon">ready</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#reversestring" class="tsd-kind-icon">reverse<wbr>String</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#scripttohash" class="tsd-kind-icon">script<wbr>ToHash</a>
@@ -825,12 +814,6 @@ $ yarn run tsc <span class="hljs-comment"># build packages with tsc command</spa
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#towords" class="tsd-kind-icon">to<wbr>Words</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#utf8tobytes" class="tsd-kind-icon">utf8<wbr>ToBytes</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#utf8tohex" class="tsd-kind-icon">utf8<wbr>ToHex</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#empty_witness_args" class="tsd-kind-icon">EMPTY_<wbr>WITNESS_<wbr>ARGS</a>

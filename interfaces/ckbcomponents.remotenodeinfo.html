@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TxPoolInfo | CKB-SDK.js</title>
+	<title>RemoteNodeInfo | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/ckbcomponents.html">CKBComponents</a>
 				</li>
 				<li>
-					<a href="ckbcomponents.txpoolinfo.html">TxPoolInfo</a>
+					<a href="ckbcomponents.remotenodeinfo.html">RemoteNodeInfo</a>
 				</li>
 			</ul>
-			<h1>Interface TxPoolInfo</h1>
+			<h1>Interface RemoteNodeInfo</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TxPoolInfo</span>
+						<span class="target">RemoteNodeInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -82,15 +82,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#lasttxsupdatedat" class="tsd-kind-icon">last<wbr>Txs<wbr>Updated<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#minfeerate" class="tsd-kind-icon">min<wbr>Fee<wbr>Rate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#orphan" class="tsd-kind-icon">orphan</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#pending" class="tsd-kind-icon">pending</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#proposed" class="tsd-kind-icon">proposed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#tiphash" class="tsd-kind-icon">tip<wbr>Hash</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#tipnumber" class="tsd-kind-icon">tip<wbr>Number</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#totaltxcycles" class="tsd-kind-icon">total<wbr>TxCycles</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txpoolinfo.html#totaltxsize" class="tsd-kind-icon">total<wbr>TxSize</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#addresses" class="tsd-kind-icon">addresses</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#connectedduration" class="tsd-kind-icon">connected<wbr>Duration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#isoutbound" class="tsd-kind-icon">is<wbr>Outbound</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#lastpingduration" class="tsd-kind-icon">last<wbr>Ping<wbr>Duration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#nodeid" class="tsd-kind-icon">node<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#protocols" class="tsd-kind-icon">protocols</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#syncstate" class="tsd-kind-icon">sync<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.remotenodeinfo.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,92 +98,82 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lasttxsupdatedat" class="tsd-anchor"></a>
-					<h3>last<wbr>Txs<wbr>Updated<wbr>At</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Txs<wbr>Updated<wbr>At<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#timestamp" class="tsd-signature-type">Timestamp</a></div>
+					<a name="addresses" class="tsd-anchor"></a>
+					<h3>addresses</h3>
+					<div class="tsd-signature tsd-kind-icon">addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"address"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"score"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L347">packages/ckb-types/index.d.ts:347</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L321">packages/ckb-types/index.d.ts:321</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="minfeerate" class="tsd-anchor"></a>
-					<h3>min<wbr>Fee<wbr>Rate</h3>
-					<div class="tsd-signature tsd-kind-icon">min<wbr>Fee<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="connectedduration" class="tsd-anchor"></a>
+					<h3>connected<wbr>Duration</h3>
+					<div class="tsd-signature tsd-kind-icon">connected<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L348">packages/ckb-types/index.d.ts:348</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L322">packages/ckb-types/index.d.ts:322</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="orphan" class="tsd-anchor"></a>
-					<h3>orphan</h3>
-					<div class="tsd-signature tsd-kind-icon">orphan<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#count" class="tsd-signature-type">Count</a></div>
+					<a name="isoutbound" class="tsd-anchor"></a>
+					<h3>is<wbr>Outbound</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Outbound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L349">packages/ckb-types/index.d.ts:349</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L323">packages/ckb-types/index.d.ts:323</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pending" class="tsd-anchor"></a>
-					<h3>pending</h3>
-					<div class="tsd-signature tsd-kind-icon">pending<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#count" class="tsd-signature-type">Count</a></div>
+					<a name="lastpingduration" class="tsd-anchor"></a>
+					<h3>last<wbr>Ping<wbr>Duration</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Ping<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L350">packages/ckb-types/index.d.ts:350</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L324">packages/ckb-types/index.d.ts:324</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="proposed" class="tsd-anchor"></a>
-					<h3>proposed</h3>
-					<div class="tsd-signature tsd-kind-icon">proposed<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#count" class="tsd-signature-type">Count</a></div>
+					<a name="nodeid" class="tsd-anchor"></a>
+					<h3>node<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">node<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L351">packages/ckb-types/index.d.ts:351</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L325">packages/ckb-types/index.d.ts:325</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tiphash" class="tsd-anchor"></a>
-					<h3>tip<wbr>Hash</h3>
-					<div class="tsd-signature tsd-kind-icon">tip<wbr>Hash<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a></div>
+					<a name="protocols" class="tsd-anchor"></a>
+					<h3>protocols</h3>
+					<div class="tsd-signature tsd-kind-icon">protocols<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"version"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L352">packages/ckb-types/index.d.ts:352</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L326">packages/ckb-types/index.d.ts:326</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tipnumber" class="tsd-anchor"></a>
-					<h3>tip<wbr>Number</h3>
-					<div class="tsd-signature tsd-kind-icon">tip<wbr>Number<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a></div>
+					<a name="syncstate" class="tsd-anchor"></a>
+					<h3>sync<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">sync<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"bestKnownHeaderHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bestKnownHeaderNumber"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"canFetchCount"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"inflightCount"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lastCommonHeaderHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lastCommonHeaderNumber"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"unknownHeaderListSize"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L353">packages/ckb-types/index.d.ts:353</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L327">packages/ckb-types/index.d.ts:327</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="totaltxcycles" class="tsd-anchor"></a>
-					<h3>total<wbr>TxCycles</h3>
-					<div class="tsd-signature tsd-kind-icon">total<wbr>TxCycles<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#cycles" class="tsd-signature-type">Cycles</a></div>
+					<a name="version" class="tsd-anchor"></a>
+					<h3>version</h3>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L354">packages/ckb-types/index.d.ts:354</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="totaltxsize" class="tsd-anchor"></a>
-					<h3>total<wbr>TxSize</h3>
-					<div class="tsd-signature tsd-kind-icon">total<wbr>TxSize<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#size" class="tsd-signature-type">Size</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L355">packages/ckb-types/index.d.ts:355</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-types/index.d.ts#L337">packages/ckb-types/index.d.ts:337</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,34 +204,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="ckbcomponents.txpoolinfo.html" class="tsd-kind-icon">Tx<wbr>Pool<wbr>Info</a>
+						<a href="ckbcomponents.remotenodeinfo.html" class="tsd-kind-icon">Remote<wbr>Node<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#lasttxsupdatedat" class="tsd-kind-icon">last<wbr>Txs<wbr>Updated<wbr>At</a>
+								<a href="ckbcomponents.remotenodeinfo.html#addresses" class="tsd-kind-icon">addresses</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#minfeerate" class="tsd-kind-icon">min<wbr>Fee<wbr>Rate</a>
+								<a href="ckbcomponents.remotenodeinfo.html#connectedduration" class="tsd-kind-icon">connected<wbr>Duration</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#orphan" class="tsd-kind-icon">orphan</a>
+								<a href="ckbcomponents.remotenodeinfo.html#isoutbound" class="tsd-kind-icon">is<wbr>Outbound</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#pending" class="tsd-kind-icon">pending</a>
+								<a href="ckbcomponents.remotenodeinfo.html#lastpingduration" class="tsd-kind-icon">last<wbr>Ping<wbr>Duration</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#proposed" class="tsd-kind-icon">proposed</a>
+								<a href="ckbcomponents.remotenodeinfo.html#nodeid" class="tsd-kind-icon">node<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#tiphash" class="tsd-kind-icon">tip<wbr>Hash</a>
+								<a href="ckbcomponents.remotenodeinfo.html#protocols" class="tsd-kind-icon">protocols</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#tipnumber" class="tsd-kind-icon">tip<wbr>Number</a>
+								<a href="ckbcomponents.remotenodeinfo.html#syncstate" class="tsd-kind-icon">sync<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#totaltxcycles" class="tsd-kind-icon">total<wbr>TxCycles</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ckbcomponents.txpoolinfo.html#totaltxsize" class="tsd-kind-icon">total<wbr>TxSize</a>
+								<a href="ckbcomponents.remotenodeinfo.html#version" class="tsd-kind-icon">version</a>
 							</li>
 						</ul>
 					</li>

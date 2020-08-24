@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TxPoolInfo | CKB-SDK.js</title>
+	<title>RemoteNodeInfo | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/rpc.html">RPC</a>
 				</li>
 				<li>
-					<a href="rpc.txpoolinfo.html">TxPoolInfo</a>
+					<a href="rpc.remotenodeinfo.html">RemoteNodeInfo</a>
 				</li>
 			</ul>
-			<h1>Interface TxPoolInfo</h1>
+			<h1>Interface RemoteNodeInfo</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TxPoolInfo</span>
+						<span class="target">RemoteNodeInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -82,15 +82,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#last_txs_updated_at" class="tsd-kind-icon">last_<wbr>txs_<wbr>updated_<wbr>at</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#min_fee_rate" class="tsd-kind-icon">min_<wbr>fee_<wbr>rate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#orphan" class="tsd-kind-icon">orphan</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#pending" class="tsd-kind-icon">pending</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#proposed" class="tsd-kind-icon">proposed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#tip_hash" class="tsd-kind-icon">tip_<wbr>hash</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#tip_number" class="tsd-kind-icon">tip_<wbr>number</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#total_tx_cycles" class="tsd-kind-icon">total_<wbr>tx_<wbr>cycles</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.txpoolinfo.html#total_tx_size" class="tsd-kind-icon">total_<wbr>tx_<wbr>size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#addresses" class="tsd-kind-icon">addresses</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#connected_duration" class="tsd-kind-icon">connected_<wbr>duration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#is_outbound" class="tsd-kind-icon">is_<wbr>outbound</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#last_ping_duration" class="tsd-kind-icon">last_<wbr>ping_<wbr>duration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#node_id" class="tsd-kind-icon">node_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#protocols" class="tsd-kind-icon">protocols</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#sync_state" class="tsd-kind-icon">sync_<wbr>state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.remotenodeinfo.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,92 +98,82 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="last_txs_updated_at" class="tsd-anchor"></a>
-					<h3>last_<wbr>txs_<wbr>updated_<wbr>at</h3>
-					<div class="tsd-signature tsd-kind-icon">last_<wbr>txs_<wbr>updated_<wbr>at<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#timestamp" class="tsd-signature-type">Timestamp</a></div>
+					<a name="addresses" class="tsd-anchor"></a>
+					<h3>addresses</h3>
+					<div class="tsd-signature tsd-kind-icon">addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"address"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"score"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L209">packages/ckb-sdk-rpc/types/rpc/index.d.ts:209</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L183">packages/ckb-sdk-rpc/types/rpc/index.d.ts:183</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="min_fee_rate" class="tsd-anchor"></a>
-					<h3>min_<wbr>fee_<wbr>rate</h3>
-					<div class="tsd-signature tsd-kind-icon">min_<wbr>fee_<wbr>rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="connected_duration" class="tsd-anchor"></a>
+					<h3>connected_<wbr>duration</h3>
+					<div class="tsd-signature tsd-kind-icon">connected_<wbr>duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L210">packages/ckb-sdk-rpc/types/rpc/index.d.ts:210</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L184">packages/ckb-sdk-rpc/types/rpc/index.d.ts:184</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="orphan" class="tsd-anchor"></a>
-					<h3>orphan</h3>
-					<div class="tsd-signature tsd-kind-icon">orphan<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#count" class="tsd-signature-type">Count</a></div>
+					<a name="is_outbound" class="tsd-anchor"></a>
+					<h3>is_<wbr>outbound</h3>
+					<div class="tsd-signature tsd-kind-icon">is_<wbr>outbound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L211">packages/ckb-sdk-rpc/types/rpc/index.d.ts:211</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L185">packages/ckb-sdk-rpc/types/rpc/index.d.ts:185</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pending" class="tsd-anchor"></a>
-					<h3>pending</h3>
-					<div class="tsd-signature tsd-kind-icon">pending<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#count" class="tsd-signature-type">Count</a></div>
+					<a name="last_ping_duration" class="tsd-anchor"></a>
+					<h3>last_<wbr>ping_<wbr>duration</h3>
+					<div class="tsd-signature tsd-kind-icon">last_<wbr>ping_<wbr>duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L212">packages/ckb-sdk-rpc/types/rpc/index.d.ts:212</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L186">packages/ckb-sdk-rpc/types/rpc/index.d.ts:186</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="proposed" class="tsd-anchor"></a>
-					<h3>proposed</h3>
-					<div class="tsd-signature tsd-kind-icon">proposed<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#count" class="tsd-signature-type">Count</a></div>
+					<a name="node_id" class="tsd-anchor"></a>
+					<h3>node_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">node_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L213">packages/ckb-sdk-rpc/types/rpc/index.d.ts:213</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L187">packages/ckb-sdk-rpc/types/rpc/index.d.ts:187</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tip_hash" class="tsd-anchor"></a>
-					<h3>tip_<wbr>hash</h3>
-					<div class="tsd-signature tsd-kind-icon">tip_<wbr>hash<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#hash256" class="tsd-signature-type">Hash256</a></div>
+					<a name="protocols" class="tsd-anchor"></a>
+					<h3>protocols</h3>
+					<div class="tsd-signature tsd-kind-icon">protocols<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"version"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L214">packages/ckb-sdk-rpc/types/rpc/index.d.ts:214</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L188">packages/ckb-sdk-rpc/types/rpc/index.d.ts:188</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tip_number" class="tsd-anchor"></a>
-					<h3>tip_<wbr>number</h3>
-					<div class="tsd-signature tsd-kind-icon">tip_<wbr>number<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#blocknumber" class="tsd-signature-type">BlockNumber</a></div>
+					<a name="sync_state" class="tsd-anchor"></a>
+					<h3>sync_<wbr>state</h3>
+					<div class="tsd-signature tsd-kind-icon">sync_<wbr>state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"best_known_header_hash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"best_known_header_number"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"can_fetch_count"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"inflight_count"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_common_header_hash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_common_header_number"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"unknown_header_list_size"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L215">packages/ckb-sdk-rpc/types/rpc/index.d.ts:215</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L189">packages/ckb-sdk-rpc/types/rpc/index.d.ts:189</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="total_tx_cycles" class="tsd-anchor"></a>
-					<h3>total_<wbr>tx_<wbr>cycles</h3>
-					<div class="tsd-signature tsd-kind-icon">total_<wbr>tx_<wbr>cycles<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#cycles" class="tsd-signature-type">Cycles</a></div>
+					<a name="version" class="tsd-anchor"></a>
+					<h3>version</h3>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L216">packages/ckb-sdk-rpc/types/rpc/index.d.ts:216</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="total_tx_size" class="tsd-anchor"></a>
-					<h3>total_<wbr>tx_<wbr>size</h3>
-					<div class="tsd-signature tsd-kind-icon">total_<wbr>tx_<wbr>size<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#size" class="tsd-signature-type">Size</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L217">packages/ckb-sdk-rpc/types/rpc/index.d.ts:217</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1e430b6/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L199">packages/ckb-sdk-rpc/types/rpc/index.d.ts:199</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,34 +204,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="rpc.txpoolinfo.html" class="tsd-kind-icon">Tx<wbr>Pool<wbr>Info</a>
+						<a href="rpc.remotenodeinfo.html" class="tsd-kind-icon">Remote<wbr>Node<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#last_txs_updated_at" class="tsd-kind-icon">last_<wbr>txs_<wbr>updated_<wbr>at</a>
+								<a href="rpc.remotenodeinfo.html#addresses" class="tsd-kind-icon">addresses</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#min_fee_rate" class="tsd-kind-icon">min_<wbr>fee_<wbr>rate</a>
+								<a href="rpc.remotenodeinfo.html#connected_duration" class="tsd-kind-icon">connected_<wbr>duration</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#orphan" class="tsd-kind-icon">orphan</a>
+								<a href="rpc.remotenodeinfo.html#is_outbound" class="tsd-kind-icon">is_<wbr>outbound</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#pending" class="tsd-kind-icon">pending</a>
+								<a href="rpc.remotenodeinfo.html#last_ping_duration" class="tsd-kind-icon">last_<wbr>ping_<wbr>duration</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#proposed" class="tsd-kind-icon">proposed</a>
+								<a href="rpc.remotenodeinfo.html#node_id" class="tsd-kind-icon">node_<wbr>id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#tip_hash" class="tsd-kind-icon">tip_<wbr>hash</a>
+								<a href="rpc.remotenodeinfo.html#protocols" class="tsd-kind-icon">protocols</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#tip_number" class="tsd-kind-icon">tip_<wbr>number</a>
+								<a href="rpc.remotenodeinfo.html#sync_state" class="tsd-kind-icon">sync_<wbr>state</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#total_tx_cycles" class="tsd-kind-icon">total_<wbr>tx_<wbr>cycles</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.txpoolinfo.html#total_tx_size" class="tsd-kind-icon">total_<wbr>tx_<wbr>size</a>
+								<a href="rpc.remotenodeinfo.html#version" class="tsd-kind-icon">version</a>
 							</li>
 						</ul>
 					</li>
