@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CellInput | CKB-SDK.js</title>
+	<title>SystemScript | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,24 +54,43 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc.html">RPC</a>
-				</li>
-				<li>
-					<a href="rpc.cellinput.html">CellInput</a>
+					<a href="systemscript.html">SystemScript</a>
 				</li>
 			</ul>
-			<h1>Interface CellInput</h1>
+			<h1>Interface SystemScript</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>summary</dt>
+						<dd><p>System scripts are the smart contracts built and deployed by the CKB core team.
+								System scripts complement the function of CKB in a flexible way.
+								System scripts can provide
+								-  core functions (e.g. secp256k1/blake160 and Nervos DAO),
+								-  shared standard implementations (e.g. Simple UDT),
+							-  or other auxiliary infrastructure components.</p>
+						</dd>
+						<dt>see</dt>
+						<dd><p><a href="https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0024-ckb-system-script-list/0024-ckb-system-script-list.md">https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0024-ckb-system-script-list/0024-ckb-system-script-list.md</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CellInput</span>
+						<span class="tsd-signature-symbol">{}</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">SystemScript</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -82,8 +101,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.cellinput.html#previous_output" class="tsd-kind-icon">previous_<wbr>output</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.cellinput.html#since" class="tsd-kind-icon">since</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="systemscript.html#deptype" class="tsd-kind-icon">dep<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,22 +110,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="previous_output" class="tsd-anchor"></a>
-					<h3>previous_<wbr>output</h3>
-					<div class="tsd-signature tsd-kind-icon">previous_<wbr>output<span class="tsd-signature-symbol">:</span> <a href="rpc.outpoint.html" class="tsd-signature-type">OutPoint</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="deptype" class="tsd-anchor"></a>
+					<h3>dep<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">dep<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#deptype" class="tsd-signature-type">DepType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L49">packages/ckb-sdk-rpc/types/rpc/index.d.ts:49</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="since" class="tsd-anchor"></a>
-					<h3>since</h3>
-					<div class="tsd-signature tsd-kind-icon">since<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#since" class="tsd-signature-type">Since</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L50">packages/ckb-sdk-rpc/types/rpc/index.d.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-utils/src/systemScripts.ts#L11">packages/ckb-sdk-utils/src/systemScripts.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,32 +127,17 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/ckbcomponents.html">CKBComponents</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/loadcellsparams.html">Load<wbr>Cells<wbr>Params</a>
-					</li>
-					<li class="current tsd-kind-namespace">
-						<a href="../modules/rpc.html">RPC</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/rawtransactionparams.html">Raw<wbr>Transaction<wbr>Params</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="rpc.cellinput.html" class="tsd-kind-icon">Cell<wbr>Input</a>
+					<li class="current tsd-kind-interface">
+						<a href="systemscript.html" class="tsd-kind-icon">System<wbr>Script</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.cellinput.html#previous_output" class="tsd-kind-icon">previous_<wbr>output</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.cellinput.html#since" class="tsd-kind-icon">since</a>
+								<a href="systemscript.html#deptype" class="tsd-kind-icon">dep<wbr>Type</a>
 							</li>
 						</ul>
 					</li>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FromIndexer | CKB-SDK.js</title>
+	<title>Output | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/loadcellsparams.html">LoadCellsParams</a>
+					<a href="../modules/rawtransactionparams.html">RawTransactionParams</a>
 				</li>
 				<li>
-					<a href="loadcellsparams.fromindexer.html">FromIndexer</a>
+					<a href="rawtransactionparams.output.html">Output</a>
 				</li>
 			</ul>
-			<h1>Interface FromIndexer</h1>
+			<h1>Interface Output</h1>
 		</div>
 	</div>
 </header>
@@ -71,10 +71,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="loadcellsparams.base.html" class="tsd-signature-type">Base</a>
+						<a href="ckbcomponents.celloutput.html" class="tsd-signature-type">CellOutput</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">FromIndexer</span>
+								<span class="target">Output</span>
 							</li>
 						</ul>
 					</li>
@@ -87,11 +87,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loadcellsparams.fromindexer.html#cellcollector" class="tsd-kind-icon">Cell<wbr>Collector</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="loadcellsparams.fromindexer.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loadcellsparams.fromindexer.html#indexer" class="tsd-kind-icon">indexer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loadcellsparams.fromindexer.html#lock" class="tsd-kind-icon">lock</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="loadcellsparams.fromindexer.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="rawtransactionparams.output.html#capacity" class="tsd-kind-icon">capacity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="rawtransactionparams.output.html#lock" class="tsd-kind-icon">lock</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="rawtransactionparams.output.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,55 +97,36 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cellcollector" class="tsd-anchor"></a>
-					<h3>Cell<wbr>Collector</h3>
-					<div class="tsd-signature tsd-kind-icon">Cell<wbr>Collector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+					<a name="capacity" class="tsd-anchor"></a>
+					<h3>capacity</h3>
+					<div class="tsd-signature tsd-kind-icon">capacity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides <a href="ckbcomponents.celloutput.html">CellOutput</a>.<a href="ckbcomponents.celloutput.html#capacity">capacity</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-core/types/global.d.ts#L33">packages/ckb-sdk-core/types/global.d.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-core/types/global.d.ts#L59">packages/ckb-sdk-core/types/global.d.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="end" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> end</h3>
-					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="loadcellsparams.base.html">Base</a>.<a href="loadcellsparams.base.html#end">end</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-core/types/global.d.ts#L20">packages/ckb-sdk-core/types/global.d.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="indexer" class="tsd-anchor"></a>
-					<h3>indexer</h3>
-					<div class="tsd-signature tsd-kind-icon">indexer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-core/types/global.d.ts#L32">packages/ckb-sdk-core/types/global.d.ts:32</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="lock" class="tsd-anchor"></a>
 					<h3>lock</h3>
 					<div class="tsd-signature tsd-kind-icon">lock<span class="tsd-signature-symbol">:</span> <a href="ckbcomponents.script.html" class="tsd-signature-type">Script</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="rawtransactionparams.output.html">Output</a>.<a href="rawtransactionparams.output.html#lock">lock</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-core/types/global.d.ts#L31">packages/ckb-sdk-core/types/global.d.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-types/index.d.ts#L95">packages/ckb-types/index.d.ts:95</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="start" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> start</h3>
-					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="ckbcomponents.script.html" class="tsd-signature-type">Script</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="loadcellsparams.base.html">Base</a>.<a href="loadcellsparams.base.html#start">start</a></p>
+						<p>Inherited from <a href="rawtransactionparams.output.html">Output</a>.<a href="rawtransactionparams.output.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-sdk-core/types/global.d.ts#L19">packages/ckb-sdk-core/types/global.d.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/8a34900/packages/ckb-types/index.d.ts#L96">packages/ckb-types/index.d.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,13 +141,13 @@
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/ckbcomponents.html">CKBComponents</a>
 					</li>
-					<li class="current tsd-kind-namespace">
+					<li class=" tsd-kind-namespace">
 						<a href="../modules/loadcellsparams.html">Load<wbr>Cells<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/rpc.html">RPC</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class="current tsd-kind-namespace">
 						<a href="../modules/rawtransactionparams.html">Raw<wbr>Transaction<wbr>Params</a>
 					</li>
 				</ul>
@@ -176,34 +155,73 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="loadcellsparams.base.html" class="tsd-kind-icon">Base</a>
+						<a href="rawtransactionparams.base.html" class="tsd-kind-icon">Base</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="rawtransactionparams.complex.html" class="tsd-kind-icon">Complex</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="loadcellsparams.fromindexer.html" class="tsd-kind-icon">From<wbr>Indexer</a>
+						<a href="rawtransactionparams.output.html" class="tsd-kind-icon">Output</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loadcellsparams.fromindexer.html#cellcollector" class="tsd-kind-icon">Cell<wbr>Collector</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+								<a href="rawtransactionparams.output.html#capacity" class="tsd-kind-icon">capacity</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="loadcellsparams.fromindexer.html#end" class="tsd-kind-icon">end</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loadcellsparams.fromindexer.html#indexer" class="tsd-kind-icon">indexer</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loadcellsparams.fromindexer.html#lock" class="tsd-kind-icon">lock</a>
+								<a href="rawtransactionparams.output.html#lock" class="tsd-kind-icon">lock</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="loadcellsparams.fromindexer.html#start" class="tsd-kind-icon">start</a>
+								<a href="rawtransactionparams.output.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="loadcellsparams.normal.html" class="tsd-kind-icon">Normal</a>
+						<a href="rawtransactionparams.simple.html" class="tsd-kind-icon">Simple</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/rawtransactionparams.html#capacity" class="tsd-kind-icon">Capacity</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/rawtransactionparams.html#cell" class="tsd-kind-icon">Cell</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/rawtransactionparams.html#lockhash" class="tsd-kind-icon">Lock<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/rawtransactionparams.html#publickeyhash" class="tsd-kind-icon">Public<wbr>Key<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#capacity-1" class="tsd-kind-icon">capacity</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#capacitythreshold" class="tsd-kind-icon">capacity<wbr>Threshold</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#cells" class="tsd-kind-icon">cells</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#changepublickeyhash" class="tsd-kind-icon">change<wbr>Public<wbr>Key<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#changethreshold" class="tsd-kind-icon">change<wbr>Threshold</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#deps" class="tsd-kind-icon">deps</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#fee" class="tsd-kind-icon">fee</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#fromaddress" class="tsd-kind-icon">from<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#safemode" class="tsd-kind-icon">safe<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
+						<a href="../modules/rawtransactionparams.html#toaddress" class="tsd-kind-icon">to<wbr>Address</a>
 					</li>
 				</ul>
 			</nav>
