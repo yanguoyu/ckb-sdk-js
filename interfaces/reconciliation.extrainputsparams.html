@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LiveCell | CKB-SDK.js</title>
+	<title>ExtraInputsParams | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc.html">RPC</a>
+					<a href="../modules/reconciliation.html">Reconciliation</a>
 				</li>
 				<li>
-					<a href="rpc.livecell.html">LiveCell</a>
+					<a href="reconciliation.extrainputsparams.html">ExtraInputsParams</a>
 				</li>
 			</ul>
-			<h1>Interface LiveCell</h1>
+			<h1>Interface ExtraInputsParams</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LiveCell</span>
+						<span class="target">ExtraInputsParams</span>
 					</li>
 				</ul>
 			</section>
@@ -82,8 +82,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.livecell.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.livecell.html#output" class="tsd-kind-icon">output</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reconciliation.extrainputsparams.html#cells" class="tsd-kind-icon">cells</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reconciliation.extrainputsparams.html#changethreshold" class="tsd-kind-icon">change<wbr>Threshold</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reconciliation.extrainputsparams.html#extracount" class="tsd-kind-icon">extra<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reconciliation.extrainputsparams.html#feerate" class="tsd-kind-icon">fee<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reconciliation.extrainputsparams.html#tx" class="tsd-kind-icon">tx</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,22 +95,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>content<span class="tsd-signature-symbol">: </span><a href="../modules/rpc.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">; </span>hash<span class="tsd-signature-symbol">: </span><a href="../modules/rpc.html#hash256" class="tsd-signature-type">Hash256</a><span class="tsd-signature-symbol"> }</span></div>
+					<a name="cells" class="tsd-anchor"></a>
+					<h3>cells</h3>
+					<div class="tsd-signature tsd-kind-icon">cells<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reconciliation.html#cell" class="tsd-signature-type">Cell</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L62">packages/ckb-sdk-rpc/types/rpc/index.d.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts#L11">packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="output" class="tsd-anchor"></a>
-					<h3>output</h3>
-					<div class="tsd-signature tsd-kind-icon">output<span class="tsd-signature-symbol">:</span> <a href="rpc.celloutput.html" class="tsd-signature-type">CellOutput</a></div>
+					<a name="changethreshold" class="tsd-anchor"></a>
+					<h3>change<wbr>Threshold</h3>
+					<div class="tsd-signature tsd-kind-icon">change<wbr>Threshold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L66">packages/ckb-sdk-rpc/types/rpc/index.d.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts#L10">packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="extracount" class="tsd-anchor"></a>
+					<h3>extra<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">extra<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts#L12">packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="feerate" class="tsd-anchor"></a>
+					<h3>fee<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">fee<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts#L9">packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tx" class="tsd-anchor"></a>
+					<h3>tx</h3>
+					<div class="tsd-signature tsd-kind-icon">tx<span class="tsd-signature-symbol">:</span> <a href="ckbcomponents.rawtransactiontosign.html" class="tsd-signature-type">RawTransactionToSign</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/7005892/packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts#L8">packages/ckb-sdk-utils/src/reconciliation/extraInputs.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -125,13 +158,13 @@
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/loadcellsparams.html">Load<wbr>Cells<wbr>Params</a>
 					</li>
-					<li class="current tsd-kind-namespace">
+					<li class=" tsd-kind-namespace">
 						<a href="../modules/rpc.html">RPC</a>
 					</li>
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/rawtransactionparams.html">Raw<wbr>Transaction<wbr>Params</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class="current tsd-kind-namespace">
 						<a href="../modules/reconciliation.html">Reconciliation</a>
 					</li>
 				</ul>
@@ -141,18 +174,30 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="rpc.livecell.html" class="tsd-kind-icon">Live<wbr>Cell</a>
+						<a href="reconciliation.extrainputsparams.html" class="tsd-kind-icon">Extra<wbr>Inputs<wbr>Params</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.livecell.html#data" class="tsd-kind-icon">data</a>
+								<a href="reconciliation.extrainputsparams.html#cells" class="tsd-kind-icon">cells</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.livecell.html#output" class="tsd-kind-icon">output</a>
+								<a href="reconciliation.extrainputsparams.html#changethreshold" class="tsd-kind-icon">change<wbr>Threshold</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="reconciliation.extrainputsparams.html#extracount" class="tsd-kind-icon">extra<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="reconciliation.extrainputsparams.html#feerate" class="tsd-kind-icon">fee<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="reconciliation.extrainputsparams.html#tx" class="tsd-kind-icon">tx</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/reconciliation.html#cell" class="tsd-kind-icon">Cell</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
