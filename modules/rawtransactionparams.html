@@ -82,6 +82,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="rawtransactionparams.html#capacity" class="tsd-kind-icon">Capacity</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="rawtransactionparams.html#cell" class="tsd-kind-icon">Cell</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="rawtransactionparams.html#fee" class="tsd-kind-icon">Fee</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="rawtransactionparams.html#lockhash" class="tsd-kind-icon">Lock<wbr>Hash</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="rawtransactionparams.html#publickeyhash" class="tsd-kind-icon">Public<wbr>Key<wbr>Hash</a></li>
 							</ul>
@@ -89,16 +90,18 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported"><a href="rawtransactionparams.html#capacity-1" class="tsd-kind-icon">capacity</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported"><a href="rawtransactionparams.html#capacity-2" class="tsd-kind-icon">capacity</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#capacitythreshold" class="tsd-kind-icon">capacity<wbr>Threshold</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported"><a href="rawtransactionparams.html#cells" class="tsd-kind-icon">cells</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#changepublickeyhash" class="tsd-kind-icon">change<wbr>Public<wbr>Key<wbr>Hash</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#changethreshold" class="tsd-kind-icon">change<wbr>Threshold</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#deps" class="tsd-kind-icon">deps</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#fee" class="tsd-kind-icon">fee</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#fee-1" class="tsd-kind-icon">fee</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported"><a href="rawtransactionparams.html#fromaddress" class="tsd-kind-icon">from<wbr>Address</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#outputsdata" class="tsd-kind-icon">outputs<wbr>Data</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#safemode" class="tsd-kind-icon">safe<wbr>Mode</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported"><a href="rawtransactionparams.html#toaddress" class="tsd-kind-icon">to<wbr>Address</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported"><a href="rawtransactionparams.html#witnesses" class="tsd-kind-icon">witnesses</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,17 +115,47 @@
 					<div class="tsd-signature tsd-kind-icon">Capacity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L40">packages/ckb-sdk-core/types/global.d.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L34">packages/ckb-sdk-core/types/global.d.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
 					<a name="cell" class="tsd-anchor"></a>
 					<h3>Cell</h3>
-					<div class="tsd-signature tsd-kind-icon">Cell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/cachedcell.html" class="tsd-signature-type">CachedCell</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"dataHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"type"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"capacity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"outPoint"</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Cell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>capacity<span class="tsd-signature-symbol">: </span><a href="ckbcomponents.html#capacity" class="tsd-signature-type">Capacity</a><span class="tsd-signature-symbol">; </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lock<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.script.html" class="tsd-signature-type">Script</a><span class="tsd-signature-symbol">; </span>outPoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.outpoint.html" class="tsd-signature-type">OutPoint</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">?: </span><a href="../interfaces/ckbcomponents.script.html" class="tsd-signature-type">Script</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L41">packages/ckb-sdk-core/types/global.d.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L35">packages/ckb-sdk-core/types/global.d.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>capacity<span class="tsd-signature-symbol">: </span><a href="ckbcomponents.html#capacity" class="tsd-signature-type">Capacity</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>lock<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.script.html" class="tsd-signature-type">Script</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>out<wbr>Point<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.outpoint.html" class="tsd-signature-type">OutPoint</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> type<span class="tsd-signature-symbol">?: </span><a href="../interfaces/ckbcomponents.script.html" class="tsd-signature-type">Script</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="fee" class="tsd-anchor"></a>
+					<h3>Fee</h3>
+					<div class="tsd-signature tsd-kind-icon">Fee<span class="tsd-signature-symbol">:</span> <a href="rawtransactionparams.html#capacity" class="tsd-signature-type">Capacity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>feeRate<span class="tsd-signature-symbol">: </span><a href="rawtransactionparams.html#capacity" class="tsd-signature-type">Capacity</a><span class="tsd-signature-symbol">; </span>reconciler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>cells<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>capacity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>outPoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.outpoint.html" class="tsd-signature-type">OutPoint</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>changeThreshold<span class="tsd-signature-symbol">: </span><a href="rawtransactionparams.html#capacity" class="tsd-signature-type">Capacity</a><span class="tsd-signature-symbol">; </span>extraCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>feeRate<span class="tsd-signature-symbol">: </span><a href="rawtransactionparams.html#capacity" class="tsd-signature-type">Capacity</a><span class="tsd-signature-symbol">; </span>tx<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.rawtransactiontosign.html" class="tsd-signature-type">RawTransactionToSign</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/ckbcomponents.rawtransactiontosign.html" class="tsd-signature-type">RawTransactionToSign</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L42">packages/ckb-sdk-core/types/global.d.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">Lock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L38">packages/ckb-sdk-core/types/global.d.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L32">packages/ckb-sdk-core/types/global.d.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">Public<wbr>Key<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L39">packages/ckb-sdk-core/types/global.d.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L33">packages/ckb-sdk-core/types/global.d.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -150,12 +183,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
-					<a name="capacity-1" class="tsd-anchor"></a>
+					<a name="capacity-2" class="tsd-anchor"></a>
 					<h3>capacity</h3>
 					<div class="tsd-signature tsd-kind-icon">capacity<span class="tsd-signature-symbol">:</span> <a href="rawtransactionparams.html#capacity" class="tsd-signature-type">Capacity</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/src/index.ts#L23">packages/ckb-sdk-core/src/index.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/src/index.ts#L22">packages/ckb-sdk-core/src/index.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +199,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#capacitythreshold">capacityThreshold</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L46">packages/ckb-sdk-core/types/global.d.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L58">packages/ckb-sdk-core/types/global.d.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">cells<span class="tsd-signature-symbol">:</span> <a href="rawtransactionparams.html#cell" class="tsd-signature-type">Cell</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/src/index.ts#L24">packages/ckb-sdk-core/src/index.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/src/index.ts#L23">packages/ckb-sdk-core/src/index.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -187,7 +220,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#changepublickeyhash">changePublicKeyHash</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L48">packages/ckb-sdk-core/types/global.d.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L60">packages/ckb-sdk-core/types/global.d.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -198,7 +231,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#changethreshold">changeThreshold</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L47">packages/ckb-sdk-core/types/global.d.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L59">packages/ckb-sdk-core/types/global.d.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,18 +242,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#deps">deps</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L45">packages/ckb-sdk-core/types/global.d.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L57">packages/ckb-sdk-core/types/global.d.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
-					<a name="fee" class="tsd-anchor"></a>
+					<a name="fee-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fee</h3>
-					<div class="tsd-signature tsd-kind-icon">fee<span class="tsd-signature-symbol">:</span> <a href="rawtransactionparams.html#capacity" class="tsd-signature-type">Capacity</a></div>
+					<div class="tsd-signature tsd-kind-icon">fee<span class="tsd-signature-symbol">:</span> <a href="rawtransactionparams.html#fee" class="tsd-signature-type">Fee</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#fee">fee</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L43">packages/ckb-sdk-core/types/global.d.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L55">packages/ckb-sdk-core/types/global.d.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +263,18 @@
 					<div class="tsd-signature tsd-kind-icon">from<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="../globals.html#address" class="tsd-signature-type">Address</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/src/index.ts#L21">packages/ckb-sdk-core/src/index.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/src/index.ts#L20">packages/ckb-sdk-core/src/index.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+					<a name="outputsdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> outputs<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">outputs<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#outputsdata">outputsData</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L62">packages/ckb-sdk-core/types/global.d.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +285,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#safemode">safeMode</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/types/global.d.ts#L44">packages/ckb-sdk-core/types/global.d.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L56">packages/ckb-sdk-core/types/global.d.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +295,18 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="../globals.html#address" class="tsd-signature-type">Address</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-core/src/index.ts#L22">packages/ckb-sdk-core/src/index.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/src/index.ts#L21">packages/ckb-sdk-core/src/index.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+					<a name="witnesses" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> witnesses</h3>
+					<div class="tsd-signature tsd-kind-icon">witnesses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.witnessargs.html" class="tsd-signature-type">WitnessArgs</a><span class="tsd-signature-symbol"> | </span><a href="ckbcomponents.html#witness" class="tsd-signature-type">Witness</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="../interfaces/rawtransactionparams.base.html">Base</a>.<a href="../interfaces/rawtransactionparams.base.html#witnesses">witnesses</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-core/types/global.d.ts#L61">packages/ckb-sdk-core/types/global.d.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -301,13 +356,16 @@
 						<a href="rawtransactionparams.html#cell" class="tsd-kind-icon">Cell</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="rawtransactionparams.html#fee" class="tsd-kind-icon">Fee</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
 						<a href="rawtransactionparams.html#lockhash" class="tsd-kind-icon">Lock<wbr>Hash</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
 						<a href="rawtransactionparams.html#publickeyhash" class="tsd-kind-icon">Public<wbr>Key<wbr>Hash</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
-						<a href="rawtransactionparams.html#capacity-1" class="tsd-kind-icon">capacity</a>
+						<a href="rawtransactionparams.html#capacity-2" class="tsd-kind-icon">capacity</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
 						<a href="rawtransactionparams.html#capacitythreshold" class="tsd-kind-icon">capacity<wbr>Threshold</a>
@@ -325,16 +383,22 @@
 						<a href="rawtransactionparams.html#deps" class="tsd-kind-icon">deps</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
-						<a href="rawtransactionparams.html#fee" class="tsd-kind-icon">fee</a>
+						<a href="rawtransactionparams.html#fee-1" class="tsd-kind-icon">fee</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
 						<a href="rawtransactionparams.html#fromaddress" class="tsd-kind-icon">from<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="rawtransactionparams.html#outputsdata" class="tsd-kind-icon">outputs<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
 						<a href="rawtransactionparams.html#safemode" class="tsd-kind-icon">safe<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
 						<a href="rawtransactionparams.html#toaddress" class="tsd-kind-icon">to<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-inherited tsd-is-not-exported">
+						<a href="rawtransactionparams.html#witnesses" class="tsd-kind-icon">witnesses</a>
 					</li>
 				</ul>
 			</nav>

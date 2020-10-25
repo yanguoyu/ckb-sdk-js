@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TransactionPoint | CKB-SDK.js</title>
+	<title>TransactionProof | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/rpc.html">RPC</a>
 				</li>
 				<li>
-					<a href="rpc.transactionpoint.html">TransactionPoint</a>
+					<a href="rpc.transactionproof.html">TransactionProof</a>
 				</li>
 			</ul>
-			<h1>Interface TransactionPoint</h1>
+			<h1>Interface TransactionProof</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TransactionPoint</span>
+						<span class="target">TransactionProof</span>
 					</li>
 				</ul>
 			</section>
@@ -82,9 +82,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.transactionpoint.html#block_number" class="tsd-kind-icon">block_<wbr>number</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.transactionpoint.html#index" class="tsd-kind-icon">index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.transactionpoint.html#tx_hash" class="tsd-kind-icon">tx_<wbr>hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.transactionproof.html#block_hash" class="tsd-kind-icon">block_<wbr>hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.transactionproof.html#proof" class="tsd-kind-icon">proof</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.transactionproof.html#witnesses_root" class="tsd-kind-icon">witnesses_<wbr>root</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,32 +93,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="block_number" class="tsd-anchor"></a>
-					<h3>block_<wbr>number</h3>
-					<div class="tsd-signature tsd-kind-icon">block_<wbr>number<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#blocknumber" class="tsd-signature-type">BlockNumber</a></div>
+					<a name="block_hash" class="tsd-anchor"></a>
+					<h3>block_<wbr>hash</h3>
+					<div class="tsd-signature tsd-kind-icon">block_<wbr>hash<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#hash" class="tsd-signature-type">Hash</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L111">packages/ckb-sdk-rpc/types/rpc/index.d.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L288">packages/ckb-sdk-rpc/types/rpc/index.d.ts:288</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="index" class="tsd-anchor"></a>
-					<h3>index</h3>
-					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#index" class="tsd-signature-type">Index</a></div>
+					<a name="proof" class="tsd-anchor"></a>
+					<h3>proof</h3>
+					<div class="tsd-signature tsd-kind-icon">proof<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>indices<span class="tsd-signature-symbol">: </span><a href="../modules/rpc.html#number" class="tsd-signature-type">Number</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lemmas<span class="tsd-signature-symbol">: </span><a href="../modules/rpc.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L112">packages/ckb-sdk-rpc/types/rpc/index.d.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L289">packages/ckb-sdk-rpc/types/rpc/index.d.ts:289</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>indices<span class="tsd-signature-symbol">: </span><a href="../modules/rpc.html#number" class="tsd-signature-type">Number</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>lemmas<span class="tsd-signature-symbol">: </span><a href="../modules/rpc.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tx_hash" class="tsd-anchor"></a>
-					<h3>tx_<wbr>hash</h3>
-					<div class="tsd-signature tsd-kind-icon">tx_<wbr>hash<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#hash256" class="tsd-signature-type">Hash256</a></div>
+					<a name="witnesses_root" class="tsd-anchor"></a>
+					<h3>witnesses_<wbr>root</h3>
+					<div class="tsd-signature tsd-kind-icon">witnesses_<wbr>root<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#hash" class="tsd-signature-type">Hash</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L113">packages/ckb-sdk-rpc/types/rpc/index.d.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L293">packages/ckb-sdk-rpc/types/rpc/index.d.ts:293</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,16 +163,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="rpc.transactionpoint.html" class="tsd-kind-icon">Transaction<wbr>Point</a>
+						<a href="rpc.transactionproof.html" class="tsd-kind-icon">Transaction<wbr>Proof</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.transactionpoint.html#block_number" class="tsd-kind-icon">block_<wbr>number</a>
+								<a href="rpc.transactionproof.html#block_hash" class="tsd-kind-icon">block_<wbr>hash</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.transactionpoint.html#index" class="tsd-kind-icon">index</a>
+								<a href="rpc.transactionproof.html#proof" class="tsd-kind-icon">proof</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.transactionpoint.html#tx_hash" class="tsd-kind-icon">tx_<wbr>hash</a>
+								<a href="rpc.transactionproof.html#witnesses_root" class="tsd-kind-icon">witnesses_<wbr>root</a>
 							</li>
 						</ul>
 					</li>

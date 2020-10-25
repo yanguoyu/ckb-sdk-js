@@ -87,6 +87,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="base.html#_rpcproperties" class="tsd-kind-icon">#rpc<wbr>Properties</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#addnode" class="tsd-kind-icon">add<wbr>Node</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#calculatedaomaximumwithdraw" class="tsd-kind-icon">calculate<wbr>Dao<wbr>Maximum<wbr>Withdraw</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#clearbannedaddresses" class="tsd-kind-icon">clear<wbr>Banned<wbr>Addresses</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#cleartxpool" class="tsd-kind-icon">clear<wbr>TxPool</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#deindexlockhash" class="tsd-kind-icon">deindex<wbr>Lock<wbr>Hash</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#dryruntransaction" class="tsd-kind-icon">dry<wbr>Run<wbr>Transaction</a></li>
@@ -98,7 +99,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getblockchaininfo" class="tsd-kind-icon">get<wbr>Blockchain<wbr>Info</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getcapacitybylockhash" class="tsd-kind-icon">get<wbr>Capacity<wbr>ByLock<wbr>Hash</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getcellbaseoutputcapacitydetails" class="tsd-kind-icon">get<wbr>Cellbase<wbr>Output<wbr>Capacity<wbr>Details</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getcellsbylockhash" class="tsd-kind-icon">get<wbr>Cells<wbr>ByLock<wbr>Hash</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getcurrentepoch" class="tsd-kind-icon">get<wbr>Current<wbr>Epoch</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getepochbynumber" class="tsd-kind-icon">get<wbr>Epoch<wbr>ByNumber</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#getheader" class="tsd-kind-icon">get<wbr>Header</a></li>
@@ -110,15 +110,18 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#gettipblocknumber" class="tsd-kind-icon">get<wbr>Tip<wbr>Block<wbr>Number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#gettipheader" class="tsd-kind-icon">get<wbr>Tip<wbr>Header</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#gettransactionproof" class="tsd-kind-icon">get<wbr>Transaction<wbr>Proof</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#gettransactionsbylockhash" class="tsd-kind-icon">get<wbr>Transactions<wbr>ByLock<wbr>Hash</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#indexlockhash" class="tsd-kind-icon">index<wbr>Lock<wbr>Hash</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#localnodeinfo" class="tsd-kind-icon">local<wbr>Node<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#pingpeers" class="tsd-kind-icon">ping<wbr>Peers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#removenode" class="tsd-kind-icon">remove<wbr>Node</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#sendtransaction" class="tsd-kind-icon">send<wbr>Transaction</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#setban" class="tsd-kind-icon">set<wbr>Ban</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#setnetworkactive" class="tsd-kind-icon">set<wbr>Network<wbr>Active</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#syncstate" class="tsd-kind-icon">sync<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#txpoolinfo" class="tsd-kind-icon">tx<wbr>Pool<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="base.html#verifytransactionproof" class="tsd-kind-icon">verify<wbr>Transaction<wbr>Proof</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -138,7 +141,7 @@
 					<div class="tsd-signature tsd-kind-icon">#rpc<wbr>Properties<span class="tsd-signature-symbol">:</span> <a href="../interfaces/rpcpropertes.html" class="tsd-signature-type">RpcPropertes</a><span class="tsd-signature-symbol"> = rpcProperties</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L400">packages/ckb-sdk-rpc/src/Base/index.ts:400</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L420">packages/ckb-sdk-rpc/src/Base/index.ts:420</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -148,7 +151,7 @@
 					<div class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>peerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L339">packages/ckb-sdk-rpc/src/Base/index.ts:339</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L351">packages/ckb-sdk-rpc/src/Base/index.ts:351</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -203,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">calculate<wbr>Dao<wbr>Maximum<wbr>Withdraw<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>outPoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.outpoint.html" class="tsd-signature-type">OutPoint</a>, withdrawBlockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L179">packages/ckb-sdk-rpc/src/Base/index.ts:179</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L183">packages/ckb-sdk-rpc/src/Base/index.ts:183</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -232,12 +235,53 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="clearbannedaddresses" class="tsd-anchor"></a>
+					<h3>clear<wbr>Banned<wbr>Addresses</h3>
+					<div class="tsd-signature tsd-kind-icon">clear<wbr>Banned<wbr>Addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L304">packages/ckb-sdk-rpc/src/Base/index.ts:304</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>method</dt>
+							<dd><p>clearBannedAddresses</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>DefaultRPC</p>
+							</dd>
+							<dt>description</dt>
+							<dd><p>clear all banned IPs/Subnets</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><null>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="cleartxpool" class="tsd-anchor"></a>
 					<h3>clear<wbr>TxPool</h3>
 					<div class="tsd-signature tsd-kind-icon">clear<wbr>TxPool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L383">packages/ckb-sdk-rpc/src/Base/index.ts:383</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L403">packages/ckb-sdk-rpc/src/Base/index.ts:403</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -277,7 +321,7 @@
 					<div class="tsd-signature tsd-kind-icon">deindex<wbr>Lock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>lockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L265">packages/ckb-sdk-rpc/src/Base/index.ts:265</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L269">packages/ckb-sdk-rpc/src/Base/index.ts:269</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -330,7 +374,7 @@
 					<div class="tsd-signature tsd-kind-icon">dry<wbr>Run<wbr>Transaction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>tx<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.rawtransaction.html" class="tsd-signature-type">RawTransaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.rundryresult.html" class="tsd-signature-type">RunDryResult</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L175">packages/ckb-sdk-rpc/src/Base/index.ts:175</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L179">packages/ckb-sdk-rpc/src/Base/index.ts:179</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -381,7 +425,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Banned<wbr>Addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#bannedaddresses" class="tsd-signature-type">BannedAddresses</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L292">packages/ckb-sdk-rpc/src/Base/index.ts:292</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L296">packages/ckb-sdk-rpc/src/Base/index.ts:296</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -419,7 +463,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L75">packages/ckb-sdk-rpc/src/Base/index.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L75">packages/ckb-sdk-rpc/src/Base/index.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -469,7 +513,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>ByNumber<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L163">packages/ckb-sdk-rpc/src/Base/index.ts:163</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L167">packages/ckb-sdk-rpc/src/Base/index.ts:167</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -519,7 +563,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Economic<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>blockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.blockeconomicstate.html" class="tsd-signature-type">BlockEconomicState</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L154">packages/ckb-sdk-rpc/src/Base/index.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L137">packages/ckb-sdk-rpc/src/Base/index.ts:137</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -566,7 +610,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L66">packages/ckb-sdk-rpc/src/Base/index.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L66">packages/ckb-sdk-rpc/src/Base/index.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -616,7 +660,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Blockchain<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.blockchaininfo.html" class="tsd-signature-type">BlockchainInfo</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L394">packages/ckb-sdk-rpc/src/Base/index.ts:394</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L414">packages/ckb-sdk-rpc/src/Base/index.ts:414</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -658,7 +702,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Capacity<wbr>ByLock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>lockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.capacitybylockhash.html" class="tsd-signature-type">CapacityByLockHash</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L254">packages/ckb-sdk-rpc/src/Base/index.ts:254</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L258">packages/ckb-sdk-rpc/src/Base/index.ts:258</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -696,7 +740,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Cellbase<wbr>Output<wbr>Capacity<wbr>Details<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>blockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.cellbaseoutputcapacitydetails.html" class="tsd-signature-type">CellbaseOutputCapacityDetails</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L143">packages/ckb-sdk-rpc/src/Base/index.ts:143</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L126">packages/ckb-sdk-rpc/src/Base/index.ts:126</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -738,78 +782,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="getcellsbylockhash" class="tsd-anchor"></a>
-					<h3>get<wbr>Cells<wbr>ByLock<wbr>Hash</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Cells<wbr>ByLock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a>, from<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span>, to<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.cellincludingoutpoint.html" class="tsd-signature-type">CellIncludingOutPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L104">packages/ckb-sdk-rpc/src/Base/index.ts:104</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>method</dt>
-							<dd><p>getCellsByLockHash</p>
-							</dd>
-							<dt>memberof</dt>
-							<dd><p>DefaultRPC</p>
-							</dd>
-							<dt>deprecated</dt>
-							<dd><p>since v0.36.0</p>
-							</dd>
-							<dt>description</dt>
-							<dd><p>rpc to get the collection of cells who have the corresponding lockhash,
-								the meaning of lockhash could be found in ckb-types</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>hash of cell&#39;s lock script</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>the start block number</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>the end block number</p>
-							</dd>
-							<dt>returns</dt>
-							<dd><p>array of objects including lock script, capacity, outPoint</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a>, from<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span>, to<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.cellincludingoutpoint.html" class="tsd-signature-type">CellIncludingOutPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>hash: <a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a></h5>
-											</li>
-											<li>
-												<h5>from: <a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></h5>
-											</li>
-											<li>
-												<h5>to: <a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.cellincludingoutpoint.html" class="tsd-signature-type">CellIncludingOutPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="getcurrentepoch" class="tsd-anchor"></a>
 					<h3>get<wbr>Current<wbr>Epoch</h3>
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Epoch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.epoch.html" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L49">packages/ckb-sdk-rpc/src/Base/index.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L49">packages/ckb-sdk-rpc/src/Base/index.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -851,7 +829,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Epoch<wbr>ByNumber<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.epoch.html" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L57">packages/ckb-sdk-rpc/src/Base/index.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L57">packages/ckb-sdk-rpc/src/Base/index.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -898,7 +876,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>blockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.blockheader.html" class="tsd-signature-type">BlockHeader</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L83">packages/ckb-sdk-rpc/src/Base/index.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L83">packages/ckb-sdk-rpc/src/Base/index.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -945,7 +923,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Header<wbr>ByNumber<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.blockheader.html" class="tsd-signature-type">BlockHeader</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L91">packages/ckb-sdk-rpc/src/Base/index.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L91">packages/ckb-sdk-rpc/src/Base/index.ts:91</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -992,7 +970,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Live<wbr>Cell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>outPoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.outpoint.html" class="tsd-signature-type">OutPoint</a>, withData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>cell<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.livecell.html" class="tsd-signature-type">LiveCell</a><span class="tsd-signature-symbol">; </span>status<span class="tsd-signature-symbol">: </span><a href="../enums/ckbcomponents.cellstatus.html" class="tsd-signature-type">CellStatus</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L119">packages/ckb-sdk-rpc/src/Base/index.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L102">packages/ckb-sdk-rpc/src/Base/index.ts:102</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1049,7 +1027,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Live<wbr>Cells<wbr>ByLock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>lockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a>, pageNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span>, pageSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span>, reverseOrder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#livecellsbylockhash" class="tsd-signature-type">LiveCellsByLockHash</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L225">packages/ckb-sdk-rpc/src/Base/index.ts:225</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L229">packages/ckb-sdk-rpc/src/Base/index.ts:229</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1119,7 +1097,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Lock<wbr>Hash<wbr>Index<wbr>States<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#lockhashindexstates" class="tsd-signature-type">LockHashIndexStates</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L211">packages/ckb-sdk-rpc/src/Base/index.ts:211</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L215">packages/ckb-sdk-rpc/src/Base/index.ts:215</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1163,7 +1141,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.remotenodeinfo.html" class="tsd-signature-type">RemoteNodeInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L285">packages/ckb-sdk-rpc/src/Base/index.ts:285</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L289">packages/ckb-sdk-rpc/src/Base/index.ts:289</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1204,7 +1182,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Tip<wbr>Block<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L32">packages/ckb-sdk-rpc/src/Base/index.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L32">packages/ckb-sdk-rpc/src/Base/index.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1245,7 +1223,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Tip<wbr>Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.blockheader.html" class="tsd-signature-type">BlockHeader</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L40">packages/ckb-sdk-rpc/src/Base/index.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L40">packages/ckb-sdk-rpc/src/Base/index.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1286,7 +1264,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Transaction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>hash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.transactionwithstatus.html" class="tsd-signature-type">TransactionWithStatus</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L134">packages/ckb-sdk-rpc/src/Base/index.ts:134</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L117">packages/ckb-sdk-rpc/src/Base/index.ts:117</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1331,12 +1309,65 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="gettransactionproof" class="tsd-anchor"></a>
+					<h3>get<wbr>Transaction<wbr>Proof</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>Proof<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>transactionHashes<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span>, blockHash<span class="tsd-signature-symbol">?: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.transactionproof.html" class="tsd-signature-type">TransactionProof</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L146">packages/ckb-sdk-rpc/src/Base/index.ts:146</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>method</dt>
+							<dd><p>getTransactionProof</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>DefaultRPC</p>
+							</dd>
+							<dt>description</dt>
+							<dd><p>request merkle proof that transactions are included in a block</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>transaction hashes, all transactions must be in the same block</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>if specified, looks for transactions in the block with this hash</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>transactionHashes<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span>, blockHash<span class="tsd-signature-symbol">?: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.transactionproof.html" class="tsd-signature-type">TransactionProof</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>transactionHashes: <a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> blockHash: <a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.transactionproof.html" class="tsd-signature-type">TransactionProof</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="gettransactionsbylockhash" class="tsd-anchor"></a>
 					<h3>get<wbr>Transactions<wbr>ByLock<wbr>Hash</h3>
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Transactions<wbr>ByLock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>lockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash256" class="tsd-signature-type">Hash256</a>, pageNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span>, pageSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span>, reverseOrder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#transactionsbylockhash" class="tsd-signature-type">TransactionsByLockHash</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L244">packages/ckb-sdk-rpc/src/Base/index.ts:244</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L248">packages/ckb-sdk-rpc/src/Base/index.ts:248</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1405,7 +1436,7 @@
 					<div class="tsd-signature tsd-kind-icon">index<wbr>Lock<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>lockHash<span class="tsd-signature-symbol">: </span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a>, indexFrom<span class="tsd-signature-symbol">?: </span><a href="../modules/ckbcomponents.html#blocknumber" class="tsd-signature-type">BlockNumber</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.lockhashindexstate.html" class="tsd-signature-type">LockHashIndexState</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L199">packages/ckb-sdk-rpc/src/Base/index.ts:199</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L203">packages/ckb-sdk-rpc/src/Base/index.ts:203</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1462,7 +1493,7 @@
 					<div class="tsd-signature tsd-kind-icon">local<wbr>Node<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.localnodeinfo.html" class="tsd-signature-type">LocalNodeInfo</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L277">packages/ckb-sdk-rpc/src/Base/index.ts:277</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L281">packages/ckb-sdk-rpc/src/Base/index.ts:281</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1498,12 +1529,52 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pingpeers" class="tsd-anchor"></a>
+					<h3>ping<wbr>Peers</h3>
+					<div class="tsd-signature tsd-kind-icon">ping<wbr>Peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L368">packages/ckb-sdk-rpc/src/Base/index.ts:368</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>method</dt>
+							<dd><p>pingPeers</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>DefaultRPC</p>
+							</dd>
+							<dt>description</dt>
+							<dd><p>request a ping sent to all connected peers to measure ping time</p>
+							</dd>
+							<dt>returns</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="removenode" class="tsd-anchor"></a>
 					<h3>remove<wbr>Node</h3>
 					<div class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>peerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L348">packages/ckb-sdk-rpc/src/Base/index.ts:348</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L360">packages/ckb-sdk-rpc/src/Base/index.ts:360</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1552,7 +1623,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Transaction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>tx<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.rawtransaction.html" class="tsd-signature-type">RawTransaction</a>, outputsValidator<span class="tsd-signature-symbol">?: </span><a href="../modules/ckbcomponents.html#outputsvalidator" class="tsd-signature-type">OutputsValidator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L363">packages/ckb-sdk-rpc/src/Base/index.ts:363</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L383">packages/ckb-sdk-rpc/src/Base/index.ts:383</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1611,7 +1682,7 @@
 					<div class="tsd-signature tsd-kind-icon">set<wbr>Ban<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"delete"</span>, banTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, absolute<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span>, reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L308">packages/ckb-sdk-rpc/src/Base/index.ts:308</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L320">packages/ckb-sdk-rpc/src/Base/index.ts:320</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1685,7 +1756,7 @@
 					<div class="tsd-signature tsd-kind-icon">set<wbr>Network<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L329">packages/ckb-sdk-rpc/src/Base/index.ts:329</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L341">packages/ckb-sdk-rpc/src/Base/index.ts:341</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1732,7 +1803,7 @@
 					<div class="tsd-signature tsd-kind-icon">sync<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.syncstate.html" class="tsd-signature-type">SyncState</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L321">packages/ckb-sdk-rpc/src/Base/index.ts:321</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L333">packages/ckb-sdk-rpc/src/Base/index.ts:333</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1770,7 +1841,7 @@
 					<div class="tsd-signature tsd-kind-icon">tx<wbr>Pool<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ckbcomponents.txpoolinfo.html" class="tsd-signature-type">TxPoolInfo</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L375">packages/ckb-sdk-rpc/src/Base/index.ts:375</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L395">packages/ckb-sdk-rpc/src/Base/index.ts:395</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1806,6 +1877,55 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="verifytransactionproof" class="tsd-anchor"></a>
+					<h3>verify<wbr>Transaction<wbr>Proof</h3>
+					<div class="tsd-signature tsd-kind-icon">verify<wbr>Transaction<wbr>Proof<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>transactionProof<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.transactionproof.html" class="tsd-signature-type">TransactionProof</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L158">packages/ckb-sdk-rpc/src/Base/index.ts:158</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>method</dt>
+							<dd><p>verifyTransactionProof</p>
+							</dd>
+							<dt>memberof</dt>
+							<dd><p>DefaultRPC</p>
+							</dd>
+							<dt>description</dt>
+							<dd><p>verifies that a proof points to transactions in a block, returns transactions it commits to.</p>
+							</dd>
+							<dt>param</dt>
+							<dd></dd>
+							<dt>returns</dt>
+							<dd><p>hash list of transactions committed in the block</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>transactionProof<span class="tsd-signature-symbol">: </span><a href="../interfaces/ckbcomponents.transactionproof.html" class="tsd-signature-type">TransactionProof</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>transactionProof: <a href="../interfaces/ckbcomponents.transactionproof.html" class="tsd-signature-type">TransactionProof</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/ckbcomponents.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
@@ -1819,7 +1939,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/3184375/packages/ckb-sdk-rpc/src/Base/index.ts#L402">packages/ckb-sdk-rpc/src/Base/index.ts:402</a></li>
+									<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/9e4d525/packages/ckb-sdk-rpc/src/Base/index.ts#L422">packages/ckb-sdk-rpc/src/Base/index.ts:422</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/rpcpropertes.html" class="tsd-signature-type">RpcPropertes</a></h4>
@@ -1851,6 +1971,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#calculatedaomaximumwithdraw" class="tsd-kind-icon">calculate<wbr>Dao<wbr>Maximum<wbr>Withdraw</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="base.html#clearbannedaddresses" class="tsd-kind-icon">clear<wbr>Banned<wbr>Addresses</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#cleartxpool" class="tsd-kind-icon">clear<wbr>TxPool</a>
@@ -1886,9 +2009,6 @@
 								<a href="base.html#getcellbaseoutputcapacitydetails" class="tsd-kind-icon">get<wbr>Cellbase<wbr>Output<wbr>Capacity<wbr>Details</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="base.html#getcellsbylockhash" class="tsd-kind-icon">get<wbr>Cells<wbr>ByLock<wbr>Hash</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#getcurrentepoch" class="tsd-kind-icon">get<wbr>Current<wbr>Epoch</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1922,6 +2042,9 @@
 								<a href="base.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="base.html#gettransactionproof" class="tsd-kind-icon">get<wbr>Transaction<wbr>Proof</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#gettransactionsbylockhash" class="tsd-kind-icon">get<wbr>Transactions<wbr>ByLock<wbr>Hash</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1929,6 +2052,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#localnodeinfo" class="tsd-kind-icon">local<wbr>Node<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="base.html#pingpeers" class="tsd-kind-icon">ping<wbr>Peers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#removenode" class="tsd-kind-icon">remove<wbr>Node</a>
@@ -1947,6 +2073,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="base.html#txpoolinfo" class="tsd-kind-icon">tx<wbr>Pool<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="base.html#verifytransactionproof" class="tsd-kind-icon">verify<wbr>Transaction<wbr>Proof</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="base.html#rpcproperties" class="tsd-kind-icon">rpc<wbr>Properties</a>
