@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AlertMessage | CKB-SDK.js</title>
+	<title>TxVerbosity | CKB-SDK.js</title>
 	<meta name="description" content="Documentation for CKB-SDK.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc.html">RPC</a>
+					<a href="../modules/ckbcomponents.html">CKBComponents</a>
 				</li>
 				<li>
-					<a href="rpc.alertmessage.html">AlertMessage</a>
+					<a href="ckbcomponents.txverbosity.html">TxVerbosity</a>
 				</li>
 			</ul>
-			<h1>Interface AlertMessage</h1>
+			<h1>Interface TxVerbosity</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">AlertMessage</span>
+						<span class="target">TxVerbosity</span>
 					</li>
 				</ul>
 			</section>
@@ -82,10 +82,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.alertmessage.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.alertmessage.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.alertmessage.html#notice_until" class="tsd-kind-icon">notice_<wbr>until</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc.alertmessage.html#priority" class="tsd-kind-icon">priority</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txverbosity.html#ancestorscount" class="tsd-kind-icon">ancestors<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txverbosity.html#ancestorscycles" class="tsd-kind-icon">ancestors<wbr>Cycles</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txverbosity.html#ancestorssize" class="tsd-kind-icon">ancestors<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txverbosity.html#cycles" class="tsd-kind-icon">cycles</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txverbosity.html#fee" class="tsd-kind-icon">fee</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ckbcomponents.txverbosity.html#size" class="tsd-kind-icon">size</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,42 +96,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ancestorscount" class="tsd-anchor"></a>
+					<h3>ancestors<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">ancestors<wbr>Count<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#count" class="tsd-signature-type">Count</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L161">packages/ckb-sdk-rpc/types/rpc/index.d.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-types/index.d.ts#L467">packages/ckb-types/index.d.ts:467</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ancestorscycles" class="tsd-anchor"></a>
+					<h3>ancestors<wbr>Cycles</h3>
+					<div class="tsd-signature tsd-kind-icon">ancestors<wbr>Cycles<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#cycles" class="tsd-signature-type">Cycles</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L164">packages/ckb-sdk-rpc/types/rpc/index.d.ts:164</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-types/index.d.ts#L466">packages/ckb-types/index.d.ts:466</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="notice_until" class="tsd-anchor"></a>
-					<h3>notice_<wbr>until</h3>
-					<div class="tsd-signature tsd-kind-icon">notice_<wbr>until<span class="tsd-signature-symbol">:</span> <a href="../modules/rpc.html#timestamp" class="tsd-signature-type">Timestamp</a></div>
+					<a name="ancestorssize" class="tsd-anchor"></a>
+					<h3>ancestors<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">ancestors<wbr>Size<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#size" class="tsd-signature-type">Size</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L163">packages/ckb-sdk-rpc/types/rpc/index.d.ts:163</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-types/index.d.ts#L465">packages/ckb-types/index.d.ts:465</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="priority" class="tsd-anchor"></a>
-					<h3>priority</h3>
-					<div class="tsd-signature tsd-kind-icon">priority<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="cycles" class="tsd-anchor"></a>
+					<h3>cycles</h3>
+					<div class="tsd-signature tsd-kind-icon">cycles<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#cycles" class="tsd-signature-type">Cycles</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-sdk-rpc/types/rpc/index.d.ts#L162">packages/ckb-sdk-rpc/types/rpc/index.d.ts:162</a></li>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-types/index.d.ts#L462">packages/ckb-types/index.d.ts:462</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fee" class="tsd-anchor"></a>
+					<h3>fee</h3>
+					<div class="tsd-signature tsd-kind-icon">fee<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#capacity" class="tsd-signature-type">Capacity</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-types/index.d.ts#L464">packages/ckb-types/index.d.ts:464</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <a href="../modules/ckbcomponents.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/nervosnetwork/ckb-sdk-js/blob/1792227/packages/ckb-types/index.d.ts#L463">packages/ckb-types/index.d.ts:463</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,13 +163,13 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class="current tsd-kind-namespace">
 						<a href="../modules/ckbcomponents.html">CKBComponents</a>
 					</li>
 					<li class=" tsd-kind-namespace">
 						<a href="../modules/loadcellsparams.html">Load<wbr>Cells<wbr>Params</a>
 					</li>
-					<li class="current tsd-kind-namespace">
+					<li class=" tsd-kind-namespace">
 						<a href="../modules/rpc.html">RPC</a>
 					</li>
 					<li class=" tsd-kind-namespace">
@@ -163,19 +185,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="rpc.alertmessage.html" class="tsd-kind-icon">Alert<wbr>Message</a>
+						<a href="ckbcomponents.txverbosity.html" class="tsd-kind-icon">Tx<wbr>Verbosity</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.alertmessage.html#id" class="tsd-kind-icon">id</a>
+								<a href="ckbcomponents.txverbosity.html#ancestorscount" class="tsd-kind-icon">ancestors<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.alertmessage.html#message" class="tsd-kind-icon">message</a>
+								<a href="ckbcomponents.txverbosity.html#ancestorscycles" class="tsd-kind-icon">ancestors<wbr>Cycles</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.alertmessage.html#notice_until" class="tsd-kind-icon">notice_<wbr>until</a>
+								<a href="ckbcomponents.txverbosity.html#ancestorssize" class="tsd-kind-icon">ancestors<wbr>Size</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc.alertmessage.html#priority" class="tsd-kind-icon">priority</a>
+								<a href="ckbcomponents.txverbosity.html#cycles" class="tsd-kind-icon">cycles</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ckbcomponents.txverbosity.html#fee" class="tsd-kind-icon">fee</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ckbcomponents.txverbosity.html#size" class="tsd-kind-icon">size</a>
 							</li>
 						</ul>
 					</li>
